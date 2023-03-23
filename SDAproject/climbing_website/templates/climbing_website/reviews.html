@@ -1,0 +1,24 @@
+{% extends "climbing_website/base.html" %}
+
+{% block title %}Reviews{% endblock %}
+
+{% block content %}
+
+<h1>Reviews</h1>
+
+<div>
+    {% for review in reviews %}
+    <div style="margin: 5px;border: 1px solid black;border-radius: 8px;">
+        <div>{{review.user_grade}}</div>
+        <div>{{review.user_description}}</div>
+        <div>{{review.user.username}}</div>
+        <div>{{review.date_create}}</div>
+        {% if review.done %}
+        <div>Trasa wykonana</div>
+        {% endif %}
+        <a href="{% url 'delete_review' pk=review.id %}">Delete</a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

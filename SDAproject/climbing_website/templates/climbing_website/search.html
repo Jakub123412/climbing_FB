@@ -1,0 +1,38 @@
+{% extends "climbing_website/base.html" %}
+
+{% block title %}Search{% endblock %}
+
+{% block content %}
+
+<h1>Search</h1>
+
+<form method="GET">
+    {% for field in form %}
+    <div>
+        <div>{{ field.label }}</div>
+
+        {{ field }}
+
+        <ul>
+           {% for error in field.errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+
+    <button type="submit">Submit</button>
+</form>
+
+<div>
+  {% for rock in rocks %}
+    <div>
+        <div>{{ rock.rock_name }}</div>
+        <div>{{ rock.localization.region }} </div>
+    </div>
+    <br>
+  {% endfor %}
+
+</div>
+
+{% endblock %}

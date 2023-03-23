@@ -1,0 +1,56 @@
+{% extends "climbing_website/base.html" %}
+
+{% block title %}Route review{% endblock %}
+
+{% block content %}
+
+<h1>Route review - {{object.rout_name}}</h1>
+
+{% if object.description %}
+<p>{{object.description}}</p>
+{% endif %}
+
+{% if rate %}
+<p>Rate: {{rate}}</p>
+{% endif %}
+
+<div>
+    <h3>Add review</h3>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {% for field in form %}
+        <div>
+            <div>{{ field.label }}</div>
+            {{ field }}
+            <ul>
+                {% for error in field.errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+<div>
+    <h3>Last reviews</h3>
+
+    {% for review in reviews %}
+    <div style="margin: 5px;border: 1px solid black;border-radius: 8px;">
+        <div>{{review.user_grade}}</div>
+        <div>{{review.user_description}}</div>
+        <div>{{review.user.username}}</div>
+        <div>{{review.date_create}}</div>
+        {% if review.done %}
+            <div>Route DONE</div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

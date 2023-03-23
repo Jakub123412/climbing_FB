@@ -1,0 +1,63 @@
+{% extends "climbing_website/base.html" %}
+
+{% block title %}Rocks{% endblock %}
+
+{% block content %}
+
+<h1>Rocks</h1>
+{% if user.is_superuser %}
+<a href="{% url 'create_rock' %}">Add new</a>
+{% endif %}
+
+
+<div class="accordion" id="accordionExample">
+    {% for rock in rocks %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading{{rock.id}}">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{rock.id}}"
+                    aria-expanded="false" aria-controls="collapse{{rock.id}}">
+                {{ rock.rock_name }}
+            </button>
+        </h2>
+        <div id="collapse{{rock.id}}" class="accordion-collapse collapse" aria-labelledby="heading{{rock.id}}"
+             data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+                <div><img width="500px" src="{% url 'image_rock' rock_id=rock.id %}" alt="rock"/></div>
+                {% if user.is_superuser %}
+                <a href="{% url 'update_rock' pk=rock.id %}">Edit</a>
+                <a href="{% url 'delete_rock' pk=rock.id %}">Delete</a>
+                {% endif %}
+                <div>
+                    District: {{ rock.localization.district }}
+                </div>
+                <div>
+                    Region: {{ rock.localization.region }}
+                </div>
+                <div>
+                    Subregion: {{ rock.localization.subregion }}
+                </div>
+                <div>Max. crag height: {{ rock.height }}</div>
+                <div>Rock face exposure: {{ rock.insolation }}</div>
+                <div>Dominant rock formations: {{ rock.formation }}</div>
+
+
+
+
+                <ul>
+                    {% for route in rock.routes.all %}
+                    <li><a href="{% url 'review' route_id=route.id %}">{{ route.route_number }}. {{ route.rout_name }}</a>
+                        {% if user.is_superuser %}
+                        <a href="{% url 'update_route' pk=route.id %}">Edit</a>
+                        <a href="{% url 'delete_route' pk=route.id %}">Delete</a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

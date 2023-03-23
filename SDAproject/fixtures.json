@@ -1,0 +1,1780 @@
+[
+  {
+    "model": "climbing_website.country",
+    "pk": 1,
+    "fields": {
+      "country_number": "PLN",
+      "country_name": "Polska"
+    }
+  },
+  {
+    "model": "climbing_website.formation",
+    "pk": 1,
+    "fields": {
+      "name": "slabs"
+    }
+  },
+  {
+    "model": "climbing_website.formation",
+    "pk": 2,
+    "fields": {
+      "name": "vertical"
+    }
+  },
+  {
+    "model": "climbing_website.formation",
+    "pk": 3,
+    "fields": {
+      "name": "overhang"
+    }
+  },
+  {
+    "model": "climbing_website.formation",
+    "pk": 4,
+    "fields": {
+      "name": "roof"
+    }
+  },
+  {
+    "model": "climbing_website.insolation",
+    "pk": 1,
+    "fields": {
+      "name": "north"
+    }
+  },
+  {
+    "model": "climbing_website.insolation",
+    "pk": 2,
+    "fields": {
+      "name": "east"
+    }
+  },
+  {
+    "model": "climbing_website.insolation",
+    "pk": 3,
+    "fields": {
+      "name": "south"
+    }
+  },
+  {
+    "model": "climbing_website.insolation",
+    "pk": 4,
+    "fields": {
+      "name": "west"
+    }
+  },
+  {
+    "model": "climbing_website.insolation",
+    "pk": 5,
+    "fields": {
+      "name": "shade from trees"
+    }
+  },
+  {
+    "model": "climbing_website.localization",
+    "pk": 4,
+    "fields": {
+      "district": "�l�skie",
+      "region": "Jura Krakowsko-Cz�stochowska",
+      "subregion": "Jura P�nocna",
+      "rock_groups": "Cz�stochowa-Kusi�ta",
+      "country": 1
+    }
+  },
+  {
+    "model": "climbing_website.localization",
+    "pk": 5,
+    "fields": {
+      "district": "�l�skie",
+      "region": "Jura Krakowsko-Cz�stochowska",
+      "subregion": "Jura P�nocna",
+      "rock_groups": "Olsztyn-Sokole G�ry",
+      "country": 1
+    }
+  },
+  {
+    "model": "climbing_website.localization",
+    "pk": 6,
+    "fields": {
+      "district": "�l�skie",
+      "region": "Jura Krakowsko-Cz�stochowska",
+      "subregion": "Jura P�nocna",
+      "rock_groups": "Szuliszowice-Zastudnie",
+      "country": 1
+    }
+  },
+  {
+    "model": "climbing_website.localization",
+    "pk": 7,
+    "fields": {
+      "district": "�l�skie",
+      "region": "Jura Krakowsko-Cz�stochowska",
+      "subregion": "Jura P�nocna",
+      "rock_groups": "Dolina Wiercicy-Trzebin�w",
+      "country": 1
+    }
+  },
+  {
+    "model": "climbing_website.localization",
+    "pk": 8,
+    "fields": {
+      "district": "�l�skie",
+      "region": "Jura Krakowsko-Cz�stochowska",
+      "subregion": "Jura P�nocna",
+      "rock_groups": "�arki-�utowice",
+      "country": 1
+    }
+  },
+  {
+    "model": "climbing_website.localization",
+    "pk": 9,
+    "fields": {
+      "district": "�l�skie",
+      "region": "Jura Krakowsko-Cz�stochowska",
+      "subregion": "Jura P�nocna",
+      "rock_groups": "Mir�w-Niegowa",
+      "country": 1
+    }
+  },
+  {
+    "model": "climbing_website.localization",
+    "pk": 10,
+    "fields": {
+      "district": "�l�skie",
+      "region": "Jura Krakowsko-Cz�stochowska",
+      "subregion": "Jura P�nocna",
+      "rock_groups": "Podlesice-p�noc",
+      "country": 1
+    }
+  },
+  {
+    "model": "climbing_website.localization",
+    "pk": 11,
+    "fields": {
+      "district": "�l�skie",
+      "region": "Jura Krakowsko-Cz�stochowska",
+      "subregion": "Jura P�nocna",
+      "rock_groups": "Podlesice-po�udnie",
+      "country": 1
+    }
+  },
+  {
+    "model": "climbing_website.localization",
+    "pk": 12,
+    "fields": {
+      "district": "�l�skie",
+      "region": "Jura Krakowsko-Cz�stochowska",
+      "subregion": "Jura P�nocna",
+      "rock_groups": "Rz�dkowice",
+      "country": 1
+    }
+  },
+  {
+    "model": "climbing_website.localization",
+    "pk": 13,
+    "fields": {
+      "district": "�l�skie",
+      "region": "Jura Krakowsko-Cz�stochowska",
+      "subregion": "Jura P�nocna",
+      "rock_groups": "Morsko-Skar�yce",
+      "country": 1
+    }
+  },
+  {
+    "model": "climbing_website.rock",
+    "pk": 3,
+    "fields": {
+      "rock_name": "Mir�w nad Wart�",
+      "photo_map": "images/mir�w_ca�y1.jpg",
+      "height": 20,
+      "insolation": 3,
+      "formation": 2,
+      "localization": 4
+    }
+  },
+  {
+    "model": "climbing_website.rock",
+    "pk": 5,
+    "fields": {
+      "rock_name": "Ja� i Ma�gosia",
+      "photo_map": "images/Ja�_i_ma�gosia.jpg",
+      "height": 12,
+      "insolation": 4,
+      "formation": 2,
+      "localization": 4
+    }
+  },
+  {
+    "model": "climbing_website.rock",
+    "pk": 6,
+    "fields": {
+      "rock_name": "Ska�a Mi�o�ci",
+      "photo_map": "images/ska�a_mi�o�ci.jpg",
+      "height": 16,
+      "insolation": 3,
+      "formation": 2,
+      "localization": 4
+    }
+  },
+  {
+    "model": "climbing_website.rock",
+    "pk": 7,
+    "fields": {
+      "rock_name": "Zielona G�ra",
+      "photo_map": "images/Zielona_G�ra_ca�a.jpg",
+      "height": 20,
+      "insolation": 4,
+      "formation": 2,
+      "localization": 4
+    }
+  },
+  {
+    "model": "climbing_website.rock",
+    "pk": 8,
+    "fields": {
+      "rock_name": "Przewieszony mur",
+      "photo_map": "images/Przewieszony_mur.jpg",
+      "height": 14,
+      "insolation": 1,
+      "formation": 3,
+      "localization": 5
+    }
+  },
+  {
+    "model": "climbing_website.rock",
+    "pk": 9,
+    "fields": {
+      "rock_name": "G�ra Knieja",
+      "photo_map": "images/G�ra_Knieja.jpg",
+      "height": 12,
+      "insolation": 1,
+      "formation": 2,
+      "localization": 5
+    }
+  },
+  {
+    "model": "climbing_website.rock",
+    "pk": 10,
+    "fields": {
+      "rock_name": "Duch",
+      "photo_map": "images/Duch.jpg",
+      "height": 12,
+      "insolation": 3,
+      "formation": 2,
+      "localization": 6
+    }
+  },
+  {
+    "model": "climbing_website.rock",
+    "pk": 11,
+    "fields": {
+      "rock_name": "Mama Pandy",
+      "photo_map": "images/Mama_Pandy.jpg",
+      "height": 10,
+      "insolation": 1,
+      "formation": 2,
+      "localization": 6
+    }
+  },
+  {
+    "model": "climbing_website.rock",
+    "pk": 12,
+    "fields": {
+      "rock_name": "Mi�dzywa�owa",
+      "photo_map": "images/Mi�dzywa�owa.jpg",
+      "height": 18,
+      "insolation": 1,
+      "formation": 2,
+      "localization": 7
+    }
+  },
+  {
+    "model": "climbing_website.rock",
+    "pk": 13,
+    "fields": {
+      "rock_name": "Ska�a z krzy�em",
+      "photo_map": "images/Ska�a_z_krzy�em.jpg",
+      "height": 18,
+      "insolation": 5,
+      "formation": 2,
+      "localization": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 3,
+    "fields": {
+      "route_number": 1,
+      "rout_name": "Na Lewo",
+      "grades": "V+",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 4,
+    "fields": {
+      "route_number": 2,
+      "rout_name": "C�rka Lucyfera",
+      "grades": "VI.1",
+      "autor": "T.Skoczylas",
+      "number_of_glued": 4,
+      "trad": false,
+      "description": "do okapu",
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 5,
+    "fields": {
+      "route_number": 3,
+      "rout_name": "Tu jest Polska",
+      "grades": "VI.2+",
+      "autor": null,
+      "number_of_glued": 4,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 6,
+    "fields": {
+      "route_number": 4,
+      "rout_name": "Ostatnie widzenie",
+      "grades": "VI.1+",
+      "autor": "T.Skoczylas",
+      "number_of_glued": 4,
+      "trad": false,
+      "description": "do okapu",
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 7,
+    "fields": {
+      "route_number": 5,
+      "rout_name": "Timur Gumirowicz",
+      "grades": "VI.2+",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": "niebezpiecznie",
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 8,
+    "fields": {
+      "route_number": 6,
+      "rout_name": "Dialog",
+      "grades": "VI.1",
+      "autor": "G.Dendek",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 9,
+    "fields": {
+      "route_number": 7,
+      "rout_name": "Ob��d",
+      "grades": "VI.1+",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": "�ci�le p�yt� VI.2+",
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 10,
+    "fields": {
+      "route_number": 8,
+      "rout_name": "Pektowin the Best",
+      "grades": "VI.2",
+      "autor": "A.Pierzchniak, R.Zgiet",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 11,
+    "fields": {
+      "route_number": 9,
+      "rout_name": "Ostrze�enie dla Szambonura",
+      "grades": "VI.2",
+      "autor": "D.Kwa�niewski",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 12,
+    "fields": {
+      "route_number": 10,
+      "rout_name": "Ucieczka Gumisi",
+      "grades": "VI.4",
+      "autor": "M.Szymanek",
+      "number_of_glued": 7,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 13,
+    "fields": {
+      "route_number": 11,
+      "rout_name": "Fulco de Lorche",
+      "grades": "VI.4",
+      "autor": "G.Kimla",
+      "number_of_glued": 7,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 14,
+    "fields": {
+      "route_number": 12,
+      "rout_name": "Linia �ycia",
+      "grades": "VI.2",
+      "autor": "P.Dudek",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 15,
+    "fields": {
+      "route_number": 13,
+      "rout_name": "P�yta Prezesa",
+      "grades": "VI.2+",
+      "autor": "P.Dudek",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 16,
+    "fields": {
+      "route_number": 14,
+      "rout_name": "Kuty filar",
+      "grades": "VI.3",
+      "autor": "P.Dudek",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 17,
+    "fields": {
+      "route_number": 15,
+      "rout_name": "Pasje",
+      "grades": "VI.4+",
+      "autor": "D.Kwa�niewski",
+      "number_of_glued": 4,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 18,
+    "fields": {
+      "route_number": 16,
+      "rout_name": "Honor clowna",
+      "grades": "VI.4",
+      "autor": "M.Szymanek",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 19,
+    "fields": {
+      "route_number": 17,
+      "rout_name": "Tatrza�ska Rysa",
+      "grades": "VI.2",
+      "autor": "D.Berghausen",
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 20,
+    "fields": {
+      "route_number": 18,
+      "rout_name": "Kampania zimowa",
+      "grades": "VI.5",
+      "autor": "D.Kwa�niewski",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 21,
+    "fields": {
+      "route_number": 19,
+      "rout_name": "Drabina mi�o�ci",
+      "grades": "VI.2+",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 22,
+    "fields": {
+      "route_number": 20,
+      "rout_name": "Ja�ka byczy �lip",
+      "grades": "VI.1",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 4,
+      "trad": false,
+      "description": null,
+      "rock": 3
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 23,
+    "fields": {
+      "route_number": 1,
+      "rout_name": "Ja�",
+      "grades": "VI.1",
+      "autor": "K.�liwa",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 24,
+    "fields": {
+      "route_number": 2,
+      "rout_name": "Fasola po breto�sku",
+      "grades": "VI.2",
+      "autor": "M.Szymanek",
+      "number_of_glued": 7,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 25,
+    "fields": {
+      "route_number": 3,
+      "rout_name": "Tr�jk�t Bermudzki",
+      "grades": "VI.1",
+      "autor": "K.�liwa",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 26,
+    "fields": {
+      "route_number": 4,
+      "rout_name": "Ma�go�",
+      "grades": "VI",
+      "autor": "M.Szymanek",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 27,
+    "fields": {
+      "route_number": 5,
+      "rout_name": "Agrest",
+      "grades": "V",
+      "autor": "S.Niewiadomski",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 28,
+    "fields": {
+      "route_number": 6,
+      "rout_name": "Szpara",
+      "grades": "IV",
+      "autor": null,
+      "number_of_glued": 4,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 29,
+    "fields": {
+      "route_number": 7,
+      "rout_name": "Ale rura",
+      "grades": "IV+",
+      "autor": "P.B�belewski",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 30,
+    "fields": {
+      "route_number": 8,
+      "rout_name": "Z biegiem rzeki",
+      "grades": "V+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 4,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 31,
+    "fields": {
+      "route_number": 9,
+      "rout_name": "Elen",
+      "grades": "V",
+      "autor": "M.Szymanek",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 32,
+    "fields": {
+      "route_number": 10,
+      "rout_name": "Waldi",
+      "grades": "IV+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 4,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 33,
+    "fields": {
+      "route_number": 11,
+      "rout_name": "To nie Bobolice",
+      "grades": "V+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 3,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 34,
+    "fields": {
+      "route_number": 12,
+      "rout_name": "wywiad w skale",
+      "grades": "VI",
+      "autor": "M.Szymanek",
+      "number_of_glued": 3,
+      "trad": false,
+      "description": null,
+      "rock": 5
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 35,
+    "fields": {
+      "route_number": 1,
+      "rout_name": "Bajki dobranocki",
+      "grades": "VI.1",
+      "autor": "M.Szymanek",
+      "number_of_glued": 10,
+      "trad": false,
+      "description": "Krucho",
+      "rock": 6
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 36,
+    "fields": {
+      "route_number": 2,
+      "rout_name": "Jancio Wodnik",
+      "grades": "VI.3+",
+      "autor": "P.Dudek",
+      "number_of_glued": 8,
+      "trad": false,
+      "description": null,
+      "rock": 6
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 37,
+    "fields": {
+      "route_number": 3,
+      "rout_name": "Jubiler Kalcytu",
+      "grades": "VI.1+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 7,
+      "trad": false,
+      "description": null,
+      "rock": 6
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 38,
+    "fields": {
+      "route_number": 4,
+      "rout_name": "Jad �e�-szenia",
+      "grades": "VI.1+",
+      "autor": "D.Kwa�niewski",
+      "number_of_glued": 7,
+      "trad": false,
+      "description": null,
+      "rock": 6
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 39,
+    "fields": {
+      "route_number": 5,
+      "rout_name": "Orka",
+      "grades": "VI",
+      "autor": "M.Szymanek",
+      "number_of_glued": 7,
+      "trad": false,
+      "description": null,
+      "rock": 6
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 40,
+    "fields": {
+      "route_number": 6,
+      "rout_name": "Mi�o�� jak wodospad",
+      "grades": "V+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 6
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 41,
+    "fields": {
+      "route_number": 1,
+      "rout_name": "Zakaz wspinania",
+      "grades": "VI.1",
+      "autor": "M.Szymanek",
+      "number_of_glued": 9,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 42,
+    "fields": {
+      "route_number": 2,
+      "rout_name": "Robaczywa serce",
+      "grades": "VI.4?",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": "nieasekurowalna",
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 43,
+    "fields": {
+      "route_number": 3,
+      "rout_name": "Spirit Horse (Czarny je�dziec Mordoru)",
+      "grades": "VI.4",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 10,
+      "trad": false,
+      "description": "ogr. bez klam po prawej inaczej VI.2+",
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 44,
+    "fields": {
+      "route_number": 4,
+      "rout_name": "Pterodaktyl",
+      "grades": "VI.3+",
+      "autor": "M.Pozna�ski",
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 45,
+    "fields": {
+      "route_number": 5,
+      "rout_name": "Rysa lewa",
+      "grades": "V+",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 46,
+    "fields": {
+      "route_number": 6,
+      "rout_name": "Profanator konwersacji",
+      "grades": "VI.5",
+      "autor": "W.Barczy�ski",
+      "number_of_glued": 9,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 47,
+    "fields": {
+      "route_number": 7,
+      "rout_name": "Rysa prawa",
+      "grades": "V",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 48,
+    "fields": {
+      "route_number": 8,
+      "rout_name": "Trzy rysy",
+      "grades": "VI+",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 49,
+    "fields": {
+      "route_number": 9,
+      "rout_name": "Zielone baboki",
+      "grades": "VI.1+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 8,
+      "trad": false,
+      "description": "oryg. bieg�a ostrzem filarka",
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 50,
+    "fields": {
+      "route_number": 10,
+      "rout_name": "Palc�wki Tatanki",
+      "grades": "VI.1",
+      "autor": "T.Piszczyk",
+      "number_of_glued": 7,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 51,
+    "fields": {
+      "route_number": 11,
+      "rout_name": "Panelowe roboty",
+      "grades": "VI.2",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 7,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 52,
+    "fields": {
+      "route_number": 12,
+      "rout_name": "Pa�dzierzowe ludzie",
+      "grades": "VI.3",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 7,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 53,
+    "fields": {
+      "route_number": 13,
+      "rout_name": "projekt otwarty",
+      "grades": "-",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 54,
+    "fields": {
+      "route_number": 14,
+      "rout_name": "Johnny Bravo",
+      "grades": "VI.4+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 55,
+    "fields": {
+      "route_number": 15,
+      "rout_name": "Wszyscy jeste�my Brzykcy",
+      "grades": "VI.2+",
+      "autor": "K.Brzykcy",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 56,
+    "fields": {
+      "route_number": 16,
+      "rout_name": "Los inwalidos",
+      "grades": "VI.1",
+      "autor": "M.Szymanek",
+      "number_of_glued": 7,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 57,
+    "fields": {
+      "route_number": 17,
+      "rout_name": "Kierownik Kozio�",
+      "grades": "VI.1+",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 58,
+    "fields": {
+      "route_number": 18,
+      "rout_name": "Hokej",
+      "grades": "VI.1+",
+      "autor": null,
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 59,
+    "fields": {
+      "route_number": 19,
+      "rout_name": "Godzilla Magilla",
+      "grades": "VI.4",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 60,
+    "fields": {
+      "route_number": 20,
+      "rout_name": "Hakuna matata",
+      "grades": "VI.3",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 61,
+    "fields": {
+      "route_number": 21,
+      "rout_name": "Bidony jak budynie",
+      "grades": "VI+",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 3,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 62,
+    "fields": {
+      "route_number": 22,
+      "rout_name": "Zielony komin",
+      "grades": "III",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 63,
+    "fields": {
+      "route_number": 23,
+      "rout_name": "�wirek",
+      "grades": "VI.1",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 3,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 64,
+    "fields": {
+      "route_number": 24,
+      "rout_name": "Muchomorek",
+      "grades": "VI+",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 3,
+      "trad": false,
+      "description": null,
+      "rock": 7
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 65,
+    "fields": {
+      "route_number": 1,
+      "rout_name": "mo�liwo��",
+      "grades": "-",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": false,
+      "description": null,
+      "rock": 8
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 66,
+    "fields": {
+      "route_number": 2,
+      "rout_name": "Guarana",
+      "grades": "VI.4",
+      "autor": null,
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 8
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 67,
+    "fields": {
+      "route_number": 3,
+      "rout_name": "projekt otwarty",
+      "grades": "-",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": false,
+      "description": null,
+      "rock": 8
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 68,
+    "fields": {
+      "route_number": 4,
+      "rout_name": "Rysa bezimienna",
+      "grades": "VI.1",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 8
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 69,
+    "fields": {
+      "route_number": 5,
+      "rout_name": "Papa Dance",
+      "grades": "VI.3",
+      "autor": null,
+      "number_of_glued": 3,
+      "trad": false,
+      "description": "potrzebna p�tla, brak stanowiska",
+      "rock": 8
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 70,
+    "fields": {
+      "route_number": 6,
+      "rout_name": "mo�liwo��",
+      "grades": "-",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": false,
+      "description": null,
+      "rock": 8
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 71,
+    "fields": {
+      "route_number": 7,
+      "rout_name": "mo�liwo��",
+      "grades": "-",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": false,
+      "description": null,
+      "rock": 8
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 72,
+    "fields": {
+      "route_number": 1,
+      "rout_name": "Satysfakcja",
+      "grades": "VI+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 3,
+      "trad": false,
+      "description": null,
+      "rock": 9
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 73,
+    "fields": {
+      "route_number": 2,
+      "rout_name": "�pi�ca pi�kno��",
+      "grades": "VI.2",
+      "autor": "M.Szymanek",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": "ogr. naturalny",
+      "rock": 9
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 74,
+    "fields": {
+      "route_number": 3,
+      "rout_name": "Rysa Kniei",
+      "grades": "VI.1",
+      "autor": "M.Szymanek",
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 9
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 75,
+    "fields": {
+      "route_number": 4,
+      "rout_name": "mo�liwo��",
+      "grades": "-",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": false,
+      "description": null,
+      "rock": 9
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 76,
+    "fields": {
+      "route_number": 5,
+      "rout_name": "Studnia",
+      "grades": "IV",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 9
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 77,
+    "fields": {
+      "route_number": 6,
+      "rout_name": "Jagoda Gumisia",
+      "grades": "VI.2",
+      "autor": "M.Szymanek",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 9
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 78,
+    "fields": {
+      "route_number": 7,
+      "rout_name": "Duchy Kniei",
+      "grades": "VI.1",
+      "autor": "M.Szymanek",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 9
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 79,
+    "fields": {
+      "route_number": 8,
+      "rout_name": "Gargamel",
+      "grades": "VI+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 4,
+      "trad": false,
+      "description": null,
+      "rock": 9
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 80,
+    "fields": {
+      "route_number": 9,
+      "rout_name": "Wa�ka",
+      "grades": "V+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 3,
+      "trad": false,
+      "description": null,
+      "rock": 9
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 81,
+    "fields": {
+      "route_number": 1,
+      "rout_name": "Rysa",
+      "grades": "VI.1",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 10
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 82,
+    "fields": {
+      "route_number": 2,
+      "rout_name": "mo�liwo��",
+      "grades": "-",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": false,
+      "description": null,
+      "rock": 10
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 83,
+    "fields": {
+      "route_number": 3,
+      "rout_name": "Duch",
+      "grades": "VI.2+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 10
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 84,
+    "fields": {
+      "route_number": 4,
+      "rout_name": "Mrok",
+      "grades": "VI.1+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 10
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 85,
+    "fields": {
+      "route_number": 5,
+      "rout_name": "Cie�",
+      "grades": "VI.2",
+      "autor": "M.Szymanek",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 10
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 86,
+    "fields": {
+      "route_number": 6,
+      "rout_name": "Niebia�ska pigu�a",
+      "grades": "VI.1",
+      "autor": "M.Szymanek",
+      "number_of_glued": 7,
+      "trad": false,
+      "description": null,
+      "rock": 10
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 87,
+    "fields": {
+      "route_number": 7,
+      "rout_name": "Zygfryd de Lord",
+      "grades": "VI+",
+      "autor": "M.Szymanek",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 10
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 88,
+    "fields": {
+      "route_number": 8,
+      "rout_name": "Route 666",
+      "grades": "V",
+      "autor": "J.Bronowski",
+      "number_of_glued": 4,
+      "trad": false,
+      "description": null,
+      "rock": 10
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 89,
+    "fields": {
+      "route_number": 1,
+      "rout_name": "Uzdrowienie",
+      "grades": "V+",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 4,
+      "trad": false,
+      "description": null,
+      "rock": 11
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 90,
+    "fields": {
+      "route_number": 2,
+      "rout_name": "Dziupelki",
+      "grades": "V",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 3,
+      "trad": false,
+      "description": null,
+      "rock": 11
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 91,
+    "fields": {
+      "route_number": 3,
+      "rout_name": "Filar kozy",
+      "grades": "V",
+      "autor": "A.Pierzchniak",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 11
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 92,
+    "fields": {
+      "route_number": 4,
+      "rout_name": "Przyczajona panda",
+      "grades": "V",
+      "autor": "B.G�rniak",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 11
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 93,
+    "fields": {
+      "route_number": 5,
+      "rout_name": "Familia pandy",
+      "grades": "IV+",
+      "autor": "B.G�rniak",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 11
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 94,
+    "fields": {
+      "route_number": 6,
+      "rout_name": "Ma�a pandy",
+      "grades": "IV",
+      "autor": "B.G�rniak",
+      "number_of_glued": 4,
+      "trad": false,
+      "description": null,
+      "rock": 11
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 95,
+    "fields": {
+      "route_number": 1,
+      "rout_name": "O jeden wa� za daleko",
+      "grades": "VI.1",
+      "autor": "P.Lenkiewicz",
+      "number_of_glued": 8,
+      "trad": false,
+      "description": null,
+      "rock": 12
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 96,
+    "fields": {
+      "route_number": 2,
+      "rout_name": "mo�liwo��",
+      "grades": "-",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": false,
+      "description": null,
+      "rock": 12
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 97,
+    "fields": {
+      "route_number": 3,
+      "rout_name": "Wa� korbowy",
+      "grades": "V+",
+      "autor": "P.Lenkiewicz",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 12
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 98,
+    "fields": {
+      "route_number": 4,
+      "rout_name": "Lewa Mi�dzywa�owa",
+      "grades": "VI.2",
+      "autor": "P.Lenkiewicz",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 12
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 99,
+    "fields": {
+      "route_number": 5,
+      "rout_name": "Prawa mi�dzywa�owa",
+      "grades": "VI.2",
+      "autor": "P.Lenkiewicz",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 12
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 100,
+    "fields": {
+      "route_number": 6,
+      "rout_name": "Wa� przeciwpowodziowy",
+      "grades": "VI+",
+      "autor": "P.Lenkiewicz",
+      "number_of_glued": 6,
+      "trad": false,
+      "description": null,
+      "rock": 12
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 101,
+    "fields": {
+      "route_number": 7,
+      "rout_name": "Wa�ko�",
+      "grades": "IV",
+      "autor": "P.Lenkiewicz",
+      "number_of_glued": 5,
+      "trad": false,
+      "description": null,
+      "rock": 12
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 102,
+    "fields": {
+      "route_number": 1,
+      "rout_name": "mo�liwo��",
+      "grades": "-",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": false,
+      "description": null,
+      "rock": 13
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 103,
+    "fields": {
+      "route_number": 2,
+      "rout_name": "Rysa lewa",
+      "grades": "-",
+      "autor": "M.Kozio�",
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 13
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 104,
+    "fields": {
+      "route_number": 3,
+      "rout_name": "Mi�dzy rysami",
+      "grades": "VI.1",
+      "autor": "M.Kozio�",
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 13
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 105,
+    "fields": {
+      "route_number": 4,
+      "rout_name": "Rysa �rodkowa",
+      "grades": "VI",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 13
+    }
+  },
+  {
+    "model": "climbing_website.route",
+    "pk": 106,
+    "fields": {
+      "route_number": 5,
+      "rout_name": "Rysa prawa",
+      "grades": "V",
+      "autor": null,
+      "number_of_glued": null,
+      "trad": true,
+      "description": null,
+      "rock": 13
+    }
+  },
+  {
+    "model": "climbing_website.routegrade",
+    "pk": 1,
+    "fields": {
+      "name": "I"
+    }
+  },
+  {
+    "model": "climbing_website.routegrade",
+    "pk": 2,
+    "fields": {
+      "name": "II"
+    }
+  },
+  {
+    "model": "climbing_website.routegrade",
+    "pk": 3,
+    "fields": {
+      "name": "III"
+    }
+  }
+]

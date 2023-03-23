@@ -1,0 +1,25 @@
+{% extends "climbing_website/base.html" %}
+
+{% block title %}Routes{% endblock %}
+
+{% block content %}
+
+<h1>Routes</h1>
+
+<a href="{% url 'create_route' %}">Add new</a>
+
+<div>
+    {% for route in routes %}
+    <div>
+        {{ route.rout_name }}
+        {{ route.grades }}
+        {{ route.author }}
+
+
+        <a href="{% url 'update_route' pk=route.id %}">Edit</a>
+        <a href="{% url 'delete_route' pk=route.id %}">Delete</a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

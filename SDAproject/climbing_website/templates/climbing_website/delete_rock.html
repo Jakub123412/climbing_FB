@@ -1,0 +1,17 @@
+{% extends "climbing_website/base.html" %}
+
+{% block title %}Delete rock{% endblock %}
+
+{% block content %}
+
+<h1>Delete rock</h1>
+
+<form method="post">{% csrf_token %}
+    <p>Are you sure you want to delete "{{ object }}"?</p>
+    {{ form }}
+    <input type="submit" value="Confirm">
+</form>
+
+<a href="{% url 'localizations' %}">Go to list</a>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "climbing_website/base.html" %}
+
+{% block title %}Localizations{% endblock %}
+
+{% block content %}
+
+<h1>Localizations</h1>
+
+<a href="{% url 'create_localization' %}">Add new</a>
+
+<div>
+    {% for loc in localizations %}
+    <div>
+        {{ loc.subregion }}
+        {{ loc.rock_groups }}
+        <a href="{% url 'update_localization' pk=loc.id %}">Edit</a>
+        <a href="{% url 'delete_localization' pk=loc.id %}">Delete</a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

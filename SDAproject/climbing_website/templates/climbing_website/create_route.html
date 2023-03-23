@@ -1,0 +1,27 @@
+{% extends "climbing_website/base.html" %}
+
+{% block title %}Create route{% endblock %}
+
+{% block content %}
+
+<h1>Create route</h1>
+
+<form method="POST">
+  {% csrf_token %}
+
+    {% for field in form %}
+    <div>
+        <div>{{ field.label }}</div>
+        {{ field }}
+        <ul>
+           {% for error in field.errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+
+    <button type="submit">Submit</button>
+</form>
+
+{% endblock %}
