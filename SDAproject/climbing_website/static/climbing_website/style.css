@@ -36,4 +36,21 @@
 
 .fit-image {
     max-width: 100%;
+    height: 98%;
+        object-fit: contain;
+        border-radius: 10px
+}
+
+.floating-button {
+position:fixed;
+right:0;
+bottom:0;
+z-index: 9999;
+margin:30px;
+}
+
+.floating-button button {
+width: 60px;
+height:60px;
+    border-radius:50%;
 }

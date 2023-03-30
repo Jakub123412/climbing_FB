@@ -31,11 +31,11 @@
 <div class="grid-box-3">
   {% for rock in rocks %}
     <div class="orm-group border p-8 rounded-5 d-flex flex-column">
-      <div style="flex-grow: 2;height: 400px" class="d-flex align-items-center p-2">
+      <div style="flex-grow: 2;height:400px" class="d-flex justify-content-center p-2">
         <img class="fit-image" id="rock-image-{{rock.id}}" src="{% url 'image_rock' rock_id=rock.id %}" alt="rock"/>
       </div>
       <div class="text-center"  style="flex-grow: 1;">
-        <div><a href="{% url 'rocks' %}?id={{rock.id}}">{{ rock.rock_name }}</a></div>
+        <div ><a href="{% url 'rocks' %}?id={{rock.id}}">{{ rock.rock_name }}</a></div>
         <div>{{ rock.localization.region }} </div>
       </div>
     </div>

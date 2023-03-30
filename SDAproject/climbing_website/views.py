@@ -81,7 +81,7 @@ class SearchView(ListView):
 
         trad = data.get("trad", None)
         if trad == "on":
-            rocks = rocks.filter(routes__trad=True)
+            rocks = rocks.filter(routes__trad=True).distinct()
 
         return rocks.all()
 

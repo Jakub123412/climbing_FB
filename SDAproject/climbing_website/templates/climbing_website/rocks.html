@@ -4,9 +4,9 @@
 
 {% block content %}
 
-<h1>Rocks</h1>
+<h1 class="text-center">Rocks</h1>
 {% if user.is_superuser %}
-<a href="{% url 'create_rock' %}">Add new</a>
+<a href="{% url 'create_rock' %}" class="floating-button"><button class="btn btn-success"><i class="bi bi-plus-lg"></i></button></a>
 {% endif %}
 
 
@@ -23,38 +23,72 @@
         <div id="collapse{{rock.id}}" class="accordion-collapse collapse" aria-labelledby="heading{{rock.id}}"
              data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <div><img id="rock-image-{{rock.id}}" width="500px" src="{% url 'image_rock' rock_id=rock.id %}" alt="rock"/></div>
-                <button data-title="{{rock.rock_name}}" image-id="{{rock.id}}" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+                <div class="d-flex justify-content-center"><img id="rock-image-{{rock.id}}" style="max-width: 100%;" src="{% url 'image_rock' rock_id=rock.id %}"
+                          alt="rock"/>
+                </div>
+                <button data-title="{{rock.rock_name}}" image-id="{{rock.id}}" type="button" class="btn btn-primary"
+                        data-bs-toggle="modal" data-bs-target="#modal">
                     <i class="bi bi-zoom-in"></i>
                 </button>
-                {% if user.is_superuser %}
-                <a href="{% url 'update_rock' pk=rock.id %}">Edit</a>
-                <a href="{% url 'delete_rock' pk=rock.id %}">Delete</a>
-                {% endif %}
-                <div>
-                    District: {{ rock.localization.district }}
-                </div>
-                <div>
-                    Region: {{ rock.localization.region }}
-                </div>
-                <div>
-                    Subregion: {{ rock.localization.subregion }}
-                </div>
-                <div>Max. crag height: {{ rock.height }}</div>
-                <div>Rock face exposure: {{ rock.insolation }}</div>
-                <div>Dominant rock formations: {{ rock.formation }}</div>
 
+                <table class="table">
+                    <tr>
+                        <td>District</td>
+                        <td>{{ rock.localization.district }}</td>
+                    </tr>
+                    <tr>
+                        <td>Region</td>
+                        <td>{{ rock.localization.region }}</td>
+                    </tr>
+                    <tr>
+                        <td>Subregion</td>
+                        <td>{{ rock.localization.subregion }}</td>
+                    </tr>
+                    <tr>
+                        <td>Max. crag height</td>
+                        <td>{{ rock.height }}</td>
+                    </tr>
+                    <tr>
+                        <td>Rock face exposure</td>
+                        <td>{{ rock.insolation }}</td>
+                    </tr>
+                    <tr>
+                        <td>Dominant rock formations</td>
+                        <td>{{ rock.formation }}</td>
+                    </tr>
+                    {% if user.is_superuser %}
+                    <tr>
+                        <td>Admin tools</td>
+                        <td><a href="{% url 'update_rock' pk=rock.id %}">Edit</a>
+                            <a href="{% url 'delete_rock' pk=rock.id %}">Delete</a></td>
+                    </tr>
 
-                <ul>
-                    {% for route in rock.routes.all %}
-                    <li><a href="{% url 'review' route_id=route.id %}">{{ route.route_number }}. {{ route.rout_name }}</a>
-                        {% if user.is_superuser %}
-                        <a href="{% url 'update_route' pk=route.id %}">Edit</a>
-                        <a href="{% url 'delete_route' pk=route.id %}">Delete</a>
-                        {% endif %}
-                    </li>
-                    {% endfor %}
-                </ul>
+                    {% endif %}
+                </table>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="hThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cThree" aria-expanded="false" aria-controls="cThree">All routes
+                        </button>
+                    </h2>
+                    <div id="cThree" class="accordion-collapse collapse" aria-labelledby="hThree">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                {% for route in rock.routes.all %}
+                                <li class="list-group-item"><a href="{% url 'review' route_id=route.id %}">{{ route.route_number }}. {{ route.rout_name }}</a>
+                                    {% if user.is_superuser %}
+                                    <span style="float: right;">
+                                        <a href="{% url 'update_route' pk=route.id %}">Edit</a>
+                                        <a href="{% url 'delete_route' pk=route.id %}">Delete</a>
+                                    </span>
+
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -70,7 +104,7 @@
                 <h1 class="modal-title fs-5" id="modal-title"></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body" id="modal-body">
+            <div class="modal-body d-flex justify-content-center" id="modal-body">
                 <img src="" alt="rocks" id="modal-image" class="fit-image">
             </div>
         </div>
@@ -83,6 +117,7 @@
 <script>
     const urlParams = new URLSearchParams(window.location.search);
     scrollAndClick(urlParams.get("id"))
+
 
 </script>
 
@@ -97,6 +132,7 @@
         const title = document.getElementById("modal-title")
         title.innerHTML = imageName
     })
+
 
 </script>
 

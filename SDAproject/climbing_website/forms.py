@@ -61,7 +61,7 @@ class SearchForm(forms.Form):
 class RouteReviewForm(forms.ModelForm):
     class Meta:
         model = RouteReview
-        fields = ["user_grade", "user_description", "done"]
+        fields = ["user_grade", "user_description"]
         widgets = {
             "user_description": forms.Textarea
         }
