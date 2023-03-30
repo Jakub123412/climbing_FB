@@ -61,7 +61,7 @@ class SearchView(ListView):
 
         route_name = data.get("route_name", None)
         if route_name:
-            rocks = rocks.filter(routes__rout_name=route_name)
+            rocks = rocks.filter(routes__rout_name__contains=route_name)
 
         formation = data.get("formation", None)
         if formation:

@@ -49,6 +49,14 @@ class SearchForm(forms.Form):
     height_max = forms.IntegerField(required=False, min_value=0)
     trad = forms.BooleanField(required=False)
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for visible in self.visible_fields():
+            if visible.field.widget.input_type != 'checkbox':
+                visible.field.widget.attrs['class'] = 'form-control'
+            else:
+                visible.field.widget.attrs["data-toggle"] = "toggle"
+
 
 class RouteReviewForm(forms.ModelForm):
     class Meta:

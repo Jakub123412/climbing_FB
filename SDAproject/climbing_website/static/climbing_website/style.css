@@ -1,0 +1,39 @@
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4px;
+}
+
+.grid-box-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 836px) {
+    .grid-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .grid-box-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+}
+
+.duo-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.large-button {
+    width: 100%;
+    height: 100%;
+}
+
+.fit-image {
+    max-width: 100%;
+}
