@@ -4,14 +4,15 @@
 
 {% block content %}
 
-<h1>Delete rock</h1>
+<div class="text-center">
+    <h1>Delete rock</h1>
 
-<form method="post">{% csrf_token %}
-    <p>Are you sure you want to delete "{{ object }}"?</p>
-    {{ form }}
-    <input type="submit" value="Confirm">
-</form>
-
-<a href="{% url 'localizations' %}">Go to list</a>
-
+    <form method="post">{% csrf_token %}
+        <p>Are you sure you want to delete "{{ object }}"?</p>
+        {{ form }}
+        <input type="submit" value="Confirm">
+    </form>
+    <br>
+    <a href="{% url 'localizations' %}">Go to list</a>
+</div>
 {% endblock %}

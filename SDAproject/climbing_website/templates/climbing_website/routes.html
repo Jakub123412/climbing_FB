@@ -4,22 +4,34 @@
 
 {% block content %}
 
-<h1>Routes</h1>
+<h1 class="text-center">Routes</h1>
+{% if user.is_superuser %}
+<a href="{% url 'create_route' %}" class="floating-button"><button class="btn btn-success"><i class="bi bi-plus-lg"></i></button></a>
+{% endif %}
 
-<a href="{% url 'create_route' %}">Add new</a>
-
-<div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Route name</th>
+            <th>Grades</th>
+            <th>Authro</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
     {% for route in routes %}
-    <div>
-        {{ route.rout_name }}
-        {{ route.grades }}
-        {{ route.author }}
-
-
-        <a href="{% url 'update_route' pk=route.id %}">Edit</a>
+        <tr>
+            <td>  {{ route.rout_name }}</td>
+            <td>   {{ route.grades }}</td>
+            <td>   {{ route.autor }}</td>
+            <td>
+                       <a href="{% url 'update_route' pk=route.id %}">Edit</a>
         <a href="{% url 'delete_route' pk=route.id %}">Delete</a>
-    </div>
-    {% endfor %}
-</div>
+            </td>
+        </tr>
+     {% endfor %}
+    </tbody>
+</table>
+
 
 {% endblock %}

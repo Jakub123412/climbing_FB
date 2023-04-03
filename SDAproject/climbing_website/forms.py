@@ -11,11 +11,23 @@ class RegisterForm(UserCreationForm):
         model = User
         fields = ["username", "email", "password1", "password2", "first_name", "last_name"]
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for visible in self.visible_fields():
+            if visible.field.widget.input_type != 'checkbox':
+                visible.field.widget.attrs['class'] = 'form-control'
+
 
 class LoginForm(AuthenticationForm):
     class Meta:
         model = User
         fields = ["username", "password"]
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for visible in self.visible_fields():
+            if visible.field.widget.input_type != 'checkbox':
+                visible.field.widget.attrs['class'] = 'form-control'
 
 
 class LocalizationForm(ModelForm):
@@ -23,17 +35,41 @@ class LocalizationForm(ModelForm):
         model = Localization
         fields = "__all__"
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for visible in self.visible_fields():
+            if visible.field.widget.input_type != 'checkbox':
+                visible.field.widget.attrs['class'] = 'form-control'
+            else:
+                visible.field.widget.attrs["data-toggle"] = "toggle"
+
 
 class RockForm(ModelForm):
     class Meta:
         model = Rock
         fields = "__all__"
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for visible in self.visible_fields():
+            if visible.field.widget.input_type != 'checkbox':
+                visible.field.widget.attrs['class'] = 'form-control'
+            else:
+                visible.field.widget.attrs["data-toggle"] = "toggle"
+
 
 class RouteForm(ModelForm):
     class Meta:
         model = Route
         fields = "__all__"
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for visible in self.visible_fields():
+            if visible.field.widget.input_type != 'checkbox':
+                visible.field.widget.attrs['class'] = 'form-control'
+            else:
+                visible.field.widget.attrs["data-toggle"] = "toggle"
 
 
 class SearchForm(forms.Form):
@@ -65,3 +101,8 @@ class RouteReviewForm(forms.ModelForm):
         widgets = {
             "user_description": forms.Textarea
         }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for visible in self.visible_fields():
+                visible.field.widget.attrs['class'] = 'form-control'

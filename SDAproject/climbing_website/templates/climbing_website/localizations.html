@@ -4,19 +4,31 @@
 
 {% block content %}
 
-<h1>Localizations</h1>
+<h1 class="text-center">Localizations</h1>
+{% if user.is_superuser %}
+<a href="{% url 'create_localization' %}" class="floating-button"><button class="btn btn-success"><i class="bi bi-plus-lg"></i></button></a>
+{% endif %}
 
-<a href="{% url 'create_localization' %}">Add new</a>
-
-<div>
-    {% for loc in localizations %}
-    <div>
-        {{ loc.subregion }}
-        {{ loc.rock_groups }}
-        <a href="{% url 'update_localization' pk=loc.id %}">Edit</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Subregion</th>
+            <th>Rock groups</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+     {% for loc in localizations %}
+        <tr>
+            <td>{{ loc.subregion }}</td>
+            <td>{{ loc.rock_groups }}</td>
+            <td>
+                      <a href="{% url 'update_localization' pk=loc.id %}">Edit</a>
         <a href="{% url 'delete_localization' pk=loc.id %}">Delete</a>
-    </div>
-    {% endfor %}
-</div>
+            </td>
+        </tr>
+     {% endfor %}
+    </tbody>
+</table>
 
 {% endblock %}
