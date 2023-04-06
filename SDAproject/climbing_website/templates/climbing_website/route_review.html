@@ -6,17 +6,29 @@
 
 <h1 class="text-center">Route review - {{object.rout_name}}</h1>
 
-{% if object.description %}
-<p>{{object.description}}</p>
-{% endif %}
+<div class="d-flex justify-content-center align-items-sm-center">
+    <table class="table" style="max-width: 50%;">
+    <tr>
+        <td>Description</td>
+        <td>{{object.description}}</td>
+    </tr>
 
-{% if rate %}
-<p class="text-center">Rate: {{rate}}</p>
-{% endif %}
+    <tr>
+        <td>Rate</td>
+        <td>{{object.grades}}</td>
+    </tr>
+    <tr>
+        <td>Average users rate</td>
+        <td>{{rate}}</td>
+    </tr>
+</table>
+</div>
+
+<br>
 
 <div class="container" style="max-width: 50%;">
     <div class="text-center border">
-        <h3>Create rock</h3>
+        <h3>Add review</h3>
 
         <form method="POST">
             {% csrf_token %}
@@ -41,30 +53,31 @@
 
 
 <div class="be-comment-block">
-	<h1 class="comments-title">Comments ({{reviews.count}})</h1>
+    <h1 class="comments-title">Comments ({{reviews.count}})</h1>
 
-     {% for review in reviews %}
-	<div class="be-comment">
-		<div class="be-img-comment">
-			<a href="blog-detail-2.html">
-				<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="" class="be-ava-comment">
-			</a>
-		</div>
-		<div class="be-comment-content">
+    {% for review in reviews %}
+    <div class="be-comment">
+        <div class="be-img-comment">
+            <a href="blog-detail-2.html">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                     alt="" class="be-ava-comment">
+            </a>
+        </div>
+        <div class="be-comment-content">
 
 				<span class="be-comment-name">
 					{{review.user.username}}
 					</span>
-				<span class="be-comment-time">
+            <span class="be-comment-time">
 					<i class="fa fa-clock-o"></i>
 					{{review.date_create}}
 				</span>
 
-			<p class="be-comment-text">
-				{{review.user_description}}
-			</p>
-		</div>
-	</div>
+            <p class="be-comment-text">
+                {{review.user_description}}
+            </p>
+        </div>
+    </div>
     {% endfor %}
 </div>
 
